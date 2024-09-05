@@ -43,7 +43,7 @@ const Home = () => {
                     }
                 </div>
                 <div className='w-2/5 h-[600px] mt-10 max-md:w-full flex justify-center pb-10'>
-                    <div className='h-full w-11/12  bg-gradient-to-r from-[#ff56a2] to-[#ffb75f] rounded-xl text-center'>
+                    <div className='h-full w-11/12  bg-gradient-to-r from-gray-400 to-gray-400 rounded-xl text-center'>
                         chatbot
                     </div>
                 </div>
