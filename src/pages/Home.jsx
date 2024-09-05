@@ -1,24 +1,35 @@
 import Cards from '@/components/homeCards/Cards';
 import HomeContainer from '@/components/homeContainer/HomeContainer';
-import user from "/user.png"
 
+import img1 from "/pngwing.com (1).png"
+import plus from "/plus.png"
+import track from "/trackpngwing.com (2).png"
+import arrow from "/arrow-right.png"
+import calen from "/modifypngwing.com (2).png"
+import calenEdit from "/icons8-edit-property-48.png"
+import complaint from "/complaiontpngwing.com (2).png"
+import complaintIcon from "/icons8-complaint-48.png"
 
 const listCards=[
     {
-        title:"Scan to deliver",
-        image:user
+        title:"Book a Mail/Parcel",
+        image:img1,
+        icon:plus
     },
     {
-        title:"pickup mails and parcels",
-        image:user
+        title:"Track your POST",
+        image:track,
+        icon:arrow
     },
     {
-        title:"Start delivering",
-        image:user
+        title:"Modify your orders",
+        image:calen,
+        icon:calenEdit
     },
     {
-        title:"Raise issue with delivery",
-        image:user
+        title:"Register Complaints",
+        image:complaint,
+        icon:complaintIcon
     },
 ]
 
@@ -33,11 +44,11 @@ const Home = () => {
                 </div>
             </div>
             <div className='flex max-md:flex-col justify-between '>
-                <div className='w-3/5 gap-2 mt-10 md:ml-10 flex justify-between max-md:w-full flex-wrap max-md:px-5 '>
+                <div className='w-3/5 gap-y-2 gap-x-0 mt-10 md:ml-10 flex justify-around  max-md:w-full flex-wrap max-md:px-5 '>
                     {
                         listCards.map((card,index)=>{
                             return(
-                                <Cards key={index} title={card.title} image={card.image}/>
+                                <Cards key={index} title={card.title} image={card.image} icon={card.icon}/>
                             )
                         })
                     }
