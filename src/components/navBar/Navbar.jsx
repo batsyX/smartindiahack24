@@ -41,6 +41,8 @@ const Navbar = () => {
                                         <div className="w-[480px] max-md:w-[280px] flex flex-col items-center">
                                             <NavigationMenuLink href="/services" className="w-full text-center py-4 hover:bg-gray-100 h-[60px]">Services</NavigationMenuLink>
                                             <NavigationMenuLink href="/services" className="w-full text-center py-4 hover:bg-gray-100 h-[60px]">Others</NavigationMenuLink>
+                                            <NavigationMenuLink href="/services" className="w-full text-center py-4 hover:bg-gray-100 h-[60px]">abc service</NavigationMenuLink>
+                                            <NavigationMenuLink href="/services" className="w-full text-center py-4 hover:bg-gray-100 h-[60px]">xyz service</NavigationMenuLink>
                                         </div>
                                     </NavigationMenuContent>
                             </NavigationMenuItem>
@@ -49,8 +51,8 @@ const Navbar = () => {
                                     <NavigationMenuTrigger>Resources</NavigationMenuTrigger>
                                     <NavigationMenuContent>
                                         <div className="w-[480px] max-md:w-[280px] flex flex-col items-center">
-                                            <NavigationMenuLink href="/services" className="w-full text-center py-4 hover:bg-gray-100 h-[60px]">Dummy</NavigationMenuLink>
-                                            <NavigationMenuLink href="/services" className="w-full text-center py-4 hover:bg-gray-100 h-[60px]">Lorem</NavigationMenuLink>
+                                            <NavigationMenuLink href="/services" className="w-full text-center py-4 hover:bg-gray-100 h-[60px]">Resource 1</NavigationMenuLink>
+                                            <NavigationMenuLink href="/services" className="w-full text-center py-4 hover:bg-gray-100 h-[60px]">Sitemap</NavigationMenuLink>
                                         </div>
                                     </NavigationMenuContent>
                             </NavigationMenuItem>

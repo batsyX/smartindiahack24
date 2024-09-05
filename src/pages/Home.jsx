@@ -9,27 +9,32 @@ import calen from "/modifypngwing.com (2).png"
 import calenEdit from "/icons8-edit-property-48.png"
 import complaint from "/complaiontpngwing.com (2).png"
 import complaintIcon from "/icons8-complaint-48.png"
+import Cbot from '@/components/chatBot/Cbot';
 
 const listCards=[
     {
         title:"Book a Mail/Parcel",
         image:img1,
-        icon:plus
+        icon:plus,
+        link:"/bookMail"
     },
     {
         title:"Track your POST",
         image:track,
-        icon:arrow
+        icon:arrow,
+        link:"/trackPost"
     },
     {
         title:"Modify your orders",
         image:calen,
-        icon:calenEdit
+        icon:calenEdit,
+        link:"/modifyOrders"
     },
     {
         title:"Register Complaints",
         image:complaint,
-        icon:complaintIcon
+        icon:complaintIcon,
+        link:"/registerComplaints"
     },
 ]
 
@@ -48,14 +53,14 @@ const Home = () => {
                     {
                         listCards.map((card,index)=>{
                             return(
-                                <Cards key={index} title={card.title} image={card.image} icon={card.icon}/>
+                                <Cards key={index} title={card.title} image={card.image} icon={card.icon} link={card.link}/>
                             )
                         })
                     }
                 </div>
                 <div className='w-2/5 h-[600px] mt-10 max-md:w-full flex justify-center pb-10'>
-                    <div className='h-full w-11/12  bg-gradient-to-r from-gray-400 to-gray-400 rounded-xl text-center'>
-                        chatbot
+                    <div className='h-full w-11/12  bg-gradient-to-r rounded-xl text-center  flex justify-center'>
+                        <Cbot />
                     </div>
                 </div>
             </div>

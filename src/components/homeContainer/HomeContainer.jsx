@@ -41,12 +41,10 @@ const HomeContainer= ()=>{
             <div className='md:hidden h-80 max-sm:h-64'>
                 <Swiper
                     spaceBetween={30}
-                    centeredSlides={true}
                     autoplay={{
                     delay: 3000,
                     disableOnInteraction: false,
                     }}
-                    onTouchMove={false}
                     loop={true}
                     navigation={true}
                     modules={[Autoplay, Navigation]}
