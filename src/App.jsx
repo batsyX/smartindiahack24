@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="w-full">
         <Navbar />
-        {/* <Home /> */}
+        <Home />
     </div>
   )
 }
