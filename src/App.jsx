@@ -12,6 +12,7 @@ import {
 import ComplaintForm from "./pages/ComplaintForm";
 import ModifyOrder from "./pages/ModifyOrder";
 import Feedback from "./pages/Feedback";
+import TrackOrder from "./pages/TrackOrder";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -49,6 +50,13 @@ const router = createBrowserRouter([
     element: <div>
       <Navbar/>
       <Feedback/>
+    </div>
+  },
+  {
+    path: "trackPost",
+    element: <div>
+      <Navbar/>
+      <TrackOrder/>
     </div>
   }
 
