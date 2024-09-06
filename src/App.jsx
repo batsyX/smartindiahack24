@@ -10,6 +10,8 @@ import {
   Link,
 } from "react-router-dom";
 import ComplaintForm from "./pages/ComplaintForm";
+import ModifyOrder from "./pages/ModifyOrder";
+import Feedback from "./pages/Feedback";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -35,6 +37,20 @@ const router = createBrowserRouter([
       <Navbar/>
     <ComplaintForm/></div>,
   },
+  {
+    path: "modifyOrders",
+    element: <div>
+      <Navbar/>
+    <ModifyOrder/>
+    </div>
+  },
+  {
+    path: "feedback",
+    element: <div>
+      <Navbar/>
+      <Feedback/>
+    </div>
+  }
 
 ]);
 

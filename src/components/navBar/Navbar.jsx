@@ -40,9 +40,9 @@ const Navbar = () => {
                                     <NavigationMenuContent>
                                         <div className="w-[480px] max-md:w-[280px] flex flex-col items-center">
                                             <NavigationMenuLink href="/dashboard" className="w-full text-center py-4 hover:bg-gray-100 h-[60px]">Dashboard</NavigationMenuLink>
-                                            <NavigationMenuLink href="/services" className="w-full text-center py-4 hover:bg-gray-100 h-[60px]">Services</NavigationMenuLink>
-                                            <NavigationMenuLink href="/services" className="w-full text-center py-4 hover:bg-gray-100 h-[60px]">abc service</NavigationMenuLink>
-                                            <NavigationMenuLink href="/services" className="w-full text-center py-4 hover:bg-gray-100 h-[60px]">xyz service</NavigationMenuLink>
+                                            <NavigationMenuLink href="/feedback" className="w-full text-center py-4 hover:bg-gray-100 h-[60px]">Feedback</NavigationMenuLink>
+                                            {/* <NavigationMenuLink href="/services" className="w-full text-center py-4 hover:bg-gray-100 h-[60px]">abc service</NavigationMenuLink>
+                                            <NavigationMenuLink href="/services" className="w-full text-center py-4 hover:bg-gray-100 h-[60px]">xyz service</NavigationMenuLink> */}
                                         </div>
                                     </NavigationMenuContent>
                             </NavigationMenuItem>
