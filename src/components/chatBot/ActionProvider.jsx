@@ -10,6 +10,31 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
       messages: [...prev.messages, botMessage],
     }));
   };
+  const whatIdo = () => {
+    const botMessage = createChatBotMessage('I am a chatbot. I am here to help you with your queries.Since i am new i am able to provide Very specific details.Sorry for the inconvenience.');
+
+    setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, botMessage],
+    }));
+  };
+  const handlePostOffice = () => {
+    const botMessage = createChatBotMessage('The nearest POST office you will find is the PostOffice- Sector-19B (Near Marigold Public School) pin-201301');
+
+    setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, botMessage],
+    }));
+  };
+  const findPostal = () => {
+    const botMessage = createChatBotMessage('The postal code of Noida is 201301');
+
+    setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, botMessage],
+    }));
+  };
+  
 
   // Put the handleHello function in the actions object to pass to the MessageParser
   return (
@@ -18,6 +43,9 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
         return React.cloneElement(child, {
           actions: {
             handleHello,
+            whatIdo,
+            handlePostOffice,
+            findPostal
           },
         });
       })}

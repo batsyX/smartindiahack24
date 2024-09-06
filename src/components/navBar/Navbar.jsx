@@ -39,8 +39,8 @@ const Navbar = () => {
                                     <NavigationMenuTrigger>Services</NavigationMenuTrigger>
                                     <NavigationMenuContent>
                                         <div className="w-[480px] max-md:w-[280px] flex flex-col items-center">
+                                            <NavigationMenuLink href="/dashboard" className="w-full text-center py-4 hover:bg-gray-100 h-[60px]">Dashboard</NavigationMenuLink>
                                             <NavigationMenuLink href="/services" className="w-full text-center py-4 hover:bg-gray-100 h-[60px]">Services</NavigationMenuLink>
-                                            <NavigationMenuLink href="/services" className="w-full text-center py-4 hover:bg-gray-100 h-[60px]">Others</NavigationMenuLink>
                                             <NavigationMenuLink href="/services" className="w-full text-center py-4 hover:bg-gray-100 h-[60px]">abc service</NavigationMenuLink>
                                             <NavigationMenuLink href="/services" className="w-full text-center py-4 hover:bg-gray-100 h-[60px]">xyz service</NavigationMenuLink>
                                         </div>
@@ -58,7 +58,7 @@ const Navbar = () => {
                             </NavigationMenuItem>
                         
                             <NavigationMenuItem>
-                                    <NavigationMenuLink href="/" className={navigationMenuTriggerStyle()}>
+                                    <NavigationMenuLink href="/about" className={navigationMenuTriggerStyle()}>
                                         About Us
                                     </NavigationMenuLink>
                             </NavigationMenuItem>
@@ -103,9 +103,9 @@ const Navbar = () => {
                                                     Resources
                                                 </DropdownMenuItem>
                                             </a>
-                                            <a href="/">
+                                            <a href="/about">
                                                 <DropdownMenuItem >
-                                                    Abour Us
+                                                    About Us
                                                 </DropdownMenuItem>
                                             </a>
                                 </DropdownMenuContent>

@@ -10,6 +10,7 @@ import calenEdit from "/icons8-edit-property-48.png"
 import complaint from "/complaiontpngwing.com (2).png"
 import complaintIcon from "/icons8-complaint-48.png"
 import Cbot from '@/components/chatBot/Cbot';
+import NewBot from '@/components/newChatBot/NewBot';
 
 const listCards=[
     {
@@ -60,7 +61,7 @@ const Home = () => {
                 </div>
                 <div className='w-2/5 h-[600px] mt-10 max-md:w-full flex justify-center pb-10'>
                     <div className='h-full w-11/12  bg-gradient-to-r rounded-xl text-center  flex justify-center'>
-                        <Cbot />
+                        <Cbot/>
                     </div>
                 </div>
             </div>
