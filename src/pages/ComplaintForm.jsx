@@ -3,8 +3,47 @@ import g20 from "/G20.png";
 import emblem from "/Emblem_of_India.svg"
 import rightLogo from "/right_side_logo.png"
 
+import emailjs from '@emailjs/browser';
+import { useRef } from 'react';
 
 const ComplaintForm = () => {
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_akjwf4g', 'template_jyne9ur', form.current, {
+        publicKey: 'eKGxVdPNILv2vVfLL',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+
+      setFormData({
+        fullName: '',
+        email: '',
+        phone: '',
+        trackingNumber: '',
+        shippingAddress: '',
+        orderNumber: '',
+        dateOfShipment: '',
+        expectedDeliveryDate: '',
+        carrier: '',
+        issueDescription: '',
+        additionalNotes: '',
+        preferredResolution: '',
+      });
+  }  
+
+  const form=useRef();
+
+
+
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
@@ -16,7 +55,6 @@ const ComplaintForm = () => {
     expectedDeliveryDate: '',
     carrier: '',
     issueDescription: '',
-    proofOfPurchase: null,
     additionalNotes: '',
     preferredResolution: '',
   });
@@ -44,7 +82,7 @@ const ComplaintForm = () => {
 
   return (
     <>
-            <form onSubmit={handleSubmit} className="max-w-lg mx-auto p-6 bg-white rounded-lg shadow-lg">
+            <form onSubmit={sendEmail} ref={form} className="max-w-lg mx-auto p-6 bg-white rounded-lg shadow-lg">
         <h2 className="text-2xl font-bold mb-6">Parcel Complaint Form</h2>
 
         <div className="mb-4">

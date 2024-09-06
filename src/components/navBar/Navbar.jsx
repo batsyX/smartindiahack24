@@ -22,7 +22,7 @@ import menu from "/menu.png"
 
 const Navbar = () => {
     return (
-        <div className="w-full flex justify-between items-center ">
+        <div className="w-full flex justify-between items-center sticky top-0 left-0 bg-white z-10">
             <div className="flex-1">
                 <img src={Group} className=" w-46 h-28 pl-5 pt-5 max-sm:h-20"  alt="" />
             </div>
